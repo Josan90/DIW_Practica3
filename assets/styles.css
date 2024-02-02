@@ -1,0 +1,319 @@
+/*---------NavBar---------*/
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #444444;
+}
+
+.navbar {
+  background-color: #0A1D56;
+  height: 80px;
+}
+
+.navbar-brand img {
+  max-height: 70px; /* Tamaño del logo, tambien */
+}
+
+.navbar-toggler {
+  border-color: #fff; /* Color boton */
+}
+
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 10px;
+  font-size: 20px;
+  padding: 0 10px; /* Añadir algún relleno para mejorar el aspecto */
+  text-align: center;
+  color: white;
+  /* Para el Hover */
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link::before {
+  background: #F2F597;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.nav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
+/*---------Cabecera---------*/
+#cabecera{
+    background-image: url(./imagenes/pexels-cottonbro-studio-6803520.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.cabecera-area h2{
+    font-family: 'Space Mono', monospace;
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+
+}
+.titular{
+    font-weight: 900;
+    font-size: 105px;
+    position: relative;
+    color: #F2F597;
+}
+.btn-inicio{
+    font-family: 'Poppins', sans-serif;
+    background-color: #37B5B6;
+    color: #492E87;
+    border-radius: 3%;
+    width: 38%;
+    margin-left: 8px;
+}
+.btn-inicio:hover{
+  background-color: #F2F597;;
+}
+
+
+/*---------Footer---------*/
+.footer-text{
+    color: #0A1D56;
+    margin: 0 0 10px;
+    padding: 0 0 0 10px;
+    font-family: 'Space Mono', monospace;
+}
+.cont-footer{
+    padding: 30px 0 5px;
+}
+.footer{
+    background-color: #F2F597;
+}
+
+
+/*------------============CONFIGURADOR============--------------*/
+/*---------Presentacion---------*/
+.presentacion-area {
+    background-color:#0A1D56;
+    background-image: url(./imagenes/bannerImg1.png);
+    background-size: cover;
+    padding: 200px 0px 60px;
+}
+
+.presentacion-main{
+  font-family: 'Poppins', sans-serif;
+    margin: 19px 0 26px;
+    font-weight: 700;
+    font-size: 50px;
+    color: #492E87;
+}
+.presentacion-sec{
+    font-size: 21px;
+    line-height: 1.4;
+    color: white;
+}
+/* ESTO NO SE QUE ES*/
+.boton-acceso{
+    font-family: 'Poppins', sans-serif;
+    background-color:#37B5B6;
+    border-radius: 0%;
+    width: 18%;
+}
+
+/*---------Seleccion PR---------*/
+#seleccion-area {
+    background-color:#492E87;
+    padding: 50px 0 50px;
+}
+.seleccion-tarjetas .seleccion-caja {
+    padding: 20px;
+    background: #fff; /*Color caja completa pt1*/
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .seleccion-tarjetas ul {
+    padding: 0;
+    list-style: none; /*Quitar el punteo del listado*/
+    color: #444444;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  
+  .seleccion-tarjetas ul li {
+    padding-bottom: 16px;
+  }
+  
+  .seleccion-tarjetas .btn-wrap {
+    margin: 20px -20px -20px -20px;
+    padding: 20px 15px;
+    background: #f8f8f8; /*Color sombreado inferior pt2*/
+    text-align: center;
+  }
+  
+  .seleccion-tarjetas .seleccion-boton {
+    background-color: #5846f9;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 4px;
+    color: #fff;
+    transition: none;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+/*---------Productos---------*/
+.productos-area{
+    padding: 50px 0 50px;
+}
+
+.producto {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #492E87;
+    padding: 10px;
+  }
+
+  .producto img {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+
+  .detalles {
+    flex: 1;
+  }
+
+  .acciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+
+/*------------============COMPONENTES============--------------*/
+/*------------------Cajas Componentes-----------------*/
+.componentes-area {
+  padding: 80px 0 54px;
+  font-family: "Poppins", sans-serif;
+}
+
+.componentes-area h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #444444;
+}
+
+.componentes-area .componente-ind {
+  margin-bottom: 26px;
+}
+
+.componentes-area .componente-ind .componente-img {
+  position: relative;
+  height: 290px;
+  max-height: 290px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: border 0.3s ease-in-out; /*Transicion*/
+}
+
+.componentes-area .componente-ind:hover .componente-img {
+  border: 2px solid #8a2be2; /*Cambia el color del borde al pasar el ratón */
+}
+
+.componentes-area .componente-ind .componente-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.componentes-area .componente-ind .componente-txt {
+  text-align: center;
+}
+
+.componentes-area .componente-ind .componente-txt .componente-titulo {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+
+/*-----------=============Quienes (About Us)===========--------------*/
+.quienes-area{
+  background-color: #f5f5f5;
+}
+
+.quienes-area2{
+  background-color: #fafafa;
+}
+
+.txt-contacto{
+  font-family: 'Poppins', sans-serif;
+}
+
+/*------------============CONTACTO============--------------*/
+/*---------Formulario--------------*/
+.formulario-area{
+  background-color: #ebebeb;
+}
+
+.form-container {
+  background-color: #F2F597;
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 10px 10px #492E87;
+}
+
+.form-container form {
+  margin-bottom: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-container button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.boton-enviar{
+  background-color: #37B5B6;
+  color:#492E87;
+}
+
+/*---------Sugerencias--------------*/
+.sugerencias-area {
+  
+  padding-bottom: 20px;
+  background-color: #ebebeb;
+}
+
+.sugerencia {
+  background-color: #37B5B6; /* Cambiar color fondo */
+  color: #fff; /* y el texto */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px #492E87;
+}
+
+.formulario h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.sugerencias-area h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
